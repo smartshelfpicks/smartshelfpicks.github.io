@@ -1,0 +1,267 @@
+{
+ "short_line": "Fresh picks are added every week. Tap any product to see today's price and details on the retailer's site.",
+ "pages": {
+  "deals-steals": {
+   "title": "How we pick deals worth your money",
+   "guide": "Not every sale is a real deal. We look for big markdowns on products people actually keep using: certified refurbished items sold by the brand itself (Dyson, Anker, Bose, KitchenAid, Ninja and more), open-box bargains from top-rated sellers, and seasonal discounts on everyday essentials. Certified refurbished products are inspected, cleaned and usually come with a warranty, so you get near-new quality for a fraction of the price. Prices change fast during Black Friday and Cyber Monday, so always check the current price before you buy.",
+   "faq": [
+    [
+     "Are refurbished products worth buying?",
+     "Usually, yes, if they are certified refurbished by the manufacturer or an approved seller. They are tested, cleaned and often include a warranty, and many cost 30 to 60 percent less than new."
+    ],
+    [
+     "When are the best deals of the year?",
+     "Black Friday and Cyber Monday in late November bring the deepest discounts, followed by Prime Day style summer sales and after-Christmas clearance."
+    ],
+    [
+     "Why did the price change after I clicked?",
+     "Retailers update prices and stock constantly, especially during holiday sales. The price on the retailer's page is always the current one."
+    ]
+   ]
+  },
+  "black-friday-deals": {
+   "title": "Black Friday deals guide",
+   "guide": "Black Friday is the best time of the year to buy big-ticket items like cordless vacuums, kitchen appliances, headphones and smart home gear. We collect the strongest Black Friday deals we can find, with a focus on trusted brands, solid warranties and real discounts rather than inflated list prices. Deals often sell out or end early, so if something on your list shows up here, it is worth checking right away.",
+   "faq": [
+    [
+     "When does Black Friday 2026 start?",
+     "Black Friday is Friday, November 27, 2026, but many retailers start their sales a week or more earlier."
+    ],
+    [
+     "How do I know a Black Friday deal is real?",
+     "Compare the sale price with what the product usually sells for, and prefer brand-certified sellers with good ratings and clear return policies."
+    ],
+    [
+     "Is it better to wait for Cyber Monday?",
+     "It depends on the product. Large appliances and home goods are often best on Black Friday, while tech and online-only deals can be strong on Cyber Monday."
+    ]
+   ]
+  },
+  "cyber-monday-deals": {
+   "title": "Cyber Monday deals guide",
+   "guide": "Cyber Monday focuses on online deals, especially tech, gadgets, software and subscriptions. We highlight the Cyber Monday offers that give the most value, from chargers and earbuds to VPNs and smart home devices, and we favor sellers with strong ratings and fair return policies.",
+   "faq": [
+    [
+     "When is Cyber Monday 2026?",
+     "Cyber Monday is Monday, November 30, 2026, the Monday after Thanksgiving."
+    ],
+    [
+     "What are the best things to buy on Cyber Monday?",
+     "Tech accessories, headphones, smart home devices, software and online subscriptions such as VPNs often see their biggest discounts."
+    ],
+    [
+     "Do Cyber Monday deals last all week?",
+     "Some retailers extend sales into Cyber Week, but many popular deals end or sell out on Monday itself."
+    ]
+   ]
+  },
+  "fitness-recovery": {
+   "title": "Choosing fitness and recovery gear",
+   "guide": "Good fitness gear should make it easier to train consistently and recover well. We look for practical picks such as wireless earbuds that stay put during workouts, foam rollers, massage guns, resistance bands and smart trackers, with an eye on durability, comfort and value. For recovery tools, simple and well-reviewed usually beats complicated and expensive.",
+   "faq": [
+    [
+     "What are good fitness gifts under $50?",
+     "Resistance bands, foam rollers, sweat-proof earbuds, insulated water bottles and gym bags are popular, useful picks that usually stay under $50."
+    ],
+    [
+     "Are budget wireless earbuds good for the gym?",
+     "Many are. Look for a secure fit, sweat resistance and at least five hours of battery life."
+    ],
+    [
+     "Do massage guns really help recovery?",
+     "Many people find they help with muscle tightness after workouts. Start on a low setting and avoid bones and joints."
+    ]
+   ]
+  },
+  "run-ride": {
+   "title": "Gear for runners and cyclists",
+   "guide": "Whether you run, ride or do both, the right gear keeps you safer, more comfortable and motivated. We pick GPS watches, lights, hydration gear and accessories from trusted brands like Garmin, focusing on battery life, accuracy and comfort. Certified refurbished watches are a smart way to get premium features for much less.",
+   "faq": [
+    [
+     "What is the best GPS watch for beginner runners?",
+     "An entry-level GPS running watch with heart rate, training plans and long battery life, such as Garmin's Forerunner line, covers everything most beginners need."
+    ],
+    [
+     "Is a refurbished Garmin watch a good idea?",
+     "Certified refurbished Garmin watches are tested by the manufacturer and usually include a warranty, making them a strong value."
+    ],
+    [
+     "What safety gear do cyclists need?",
+     "A well-fitting helmet, front and rear lights, and bright or reflective clothing are the essentials for riding safely."
+    ]
+   ]
+  },
+  "home-decor": {
+   "title": "Home and decor finds that make life easier",
+   "guide": "Our home picks focus on things that make everyday life easier and your space feel better: cordless vacuums, smart cleaning tools, cozy bedding and simple decor. We favor brands with strong reputations and warranties, and we often feature certified refurbished models that cost far less than new while performing like new.",
+   "faq": [
+    [
+     "Is a refurbished Dyson vacuum worth it?",
+     "Dyson certified refurbished vacuums are inspected and come with a warranty, and they often cost about half of the new price, which makes them one of the best home deals around."
+    ],
+    [
+     "Cordless or corded vacuum?",
+     "Cordless stick vacuums are lighter and quicker for daily cleaning, while corded uprights suit large carpeted homes and deep cleaning."
+    ],
+    [
+     "How do I choose affordable decor that looks expensive?",
+     "Stick to a simple color palette, add texture with throws and pillows, and invest in one or two statement pieces."
+    ]
+   ]
+  },
+  "kitchen-finds": {
+   "title": "Kitchen tools and appliances worth having",
+   "guide": "We look for kitchen tools and appliances that genuinely save time or make cooking more fun, from stand mixers and ice cream makers to clever everyday gadgets. Brand-certified refurbished appliances from names like KitchenAid and Ninja are a favorite, because they come inspected and covered by warranty at a much lower price.",
+   "faq": [
+    [
+     "Is a refurbished KitchenAid mixer reliable?",
+     "Factory-refurbished KitchenAid mixers are inspected and tested and typically include a warranty, and they are known for lasting many years."
+    ],
+    [
+     "What is a good kitchen gift for someone who loves baking?",
+     "A stand mixer, quality mixing bowls, a digital kitchen scale or a set of silicone baking mats are all popular, practical choices."
+    ],
+    [
+     "Which small appliances are most useful?",
+     "Many home cooks get the most use out of an air fryer, a blender, a stand mixer and a good electric kettle."
+    ]
+   ]
+  },
+  "gift-ideas": {
+   "title": "Gift ideas for everyone on your list",
+   "guide": "Finding the right gift is easier when you start with what someone will actually use. Our gift ideas cover all budgets, from stocking stuffers under $25 to bigger gifts like premium speakers and kitchen appliances. We focus on well-reviewed products from trusted brands, so your gift feels thoughtful and lasts.",
+   "faq": [
+    [
+     "What are good gifts for him?",
+     "Portable Bluetooth speakers, quality earbuds, GPS watches, tools and grilling gear are reliable crowd-pleasers."
+    ],
+    [
+     "What are good gifts for her?",
+     "Popular picks include cozy home items, kitchen favorites, beauty tools, jewelry and flowers or gifts that never wilt, like LEGO bouquets."
+    ],
+    [
+     "What can I get for under $50?",
+     "Earbuds, power banks, LEGO sets, candles, water bottles and small kitchen gadgets make great gifts under $50."
+    ]
+   ]
+  },
+  "tech-safety": {
+   "title": "Smart tech and online safety",
+   "guide": "Our tech picks focus on gadgets that make daily life easier and tools that keep you safe online. That includes chargers and power banks, smart home and security devices, and VPN services that protect your data on public Wi-Fi. We prefer brands with solid support and clear warranties.",
+   "faq": [
+    [
+     "Do I really need a VPN?",
+     "A VPN is most useful on public Wi-Fi at hotels, airports and coffee shops, because it encrypts your connection and makes it harder for others to snoop on your activity."
+    ],
+    [
+     "What size power bank should I buy?",
+     "A slim 5,000 mAh magnetic power bank gives most phones about one extra charge, while 10,000 to 20,000 mAh is better for travel."
+    ],
+    [
+     "Is refurbished tech safe to buy?",
+     "Certified refurbished tech from the brand or an approved seller is tested and usually includes a warranty, making it a safe way to save."
+    ]
+   ]
+  },
+  "travel-essentials": {
+   "title": "Travel essentials that make trips easier",
+   "guide": "Good travel gear is light, packable and solves real problems on the road. We pick items like e-readers, power banks, trackers, packing organizers and comfortable accessories, favoring durable products from trusted brands that make airports, flights and road trips easier.",
+   "faq": [
+    [
+     "What should be in every carry-on?",
+     "A phone charger or power bank, headphones, a refillable water bottle, any medications and a light layer are the basics most travelers want within reach."
+    ],
+    [
+     "Is a Kindle worth it for travel?",
+     "Yes for readers. An e-reader holds thousands of books, weighs about as much as a single paperback and its battery lasts for weeks."
+    ],
+    [
+     "Can I bring a power bank on a plane?",
+     "Power banks are generally allowed in carry-on bags but not in checked luggage. Check your airline's limits for larger batteries."
+    ]
+   ]
+  },
+  "flowers-treats": {
+   "title": "Flowers, treats and thoughtful surprises",
+   "guide": "Flowers and treats are perfect for birthdays, anniversaries and just-because moments. Along with classic bouquets and sweets, we love gifts that last, such as LEGO botanical sets that never wilt. Our picks favor quality, presentation and reliable delivery.",
+   "faq": [
+    [
+     "What flowers last the longest?",
+     "Alstroemeria, chrysanthemums and carnations often last two weeks or more with fresh water and trimmed stems. LEGO flower sets last forever."
+    ],
+    [
+     "Are LEGO flower bouquets a good gift for adults?",
+     "Yes. LEGO Botanicals sets are designed for adults, offer a relaxing build and make lasting decor."
+    ],
+    [
+     "What is a good last-minute treat gift?",
+     "Gourmet chocolates, cookie gift boxes and flower delivery services are reliable last-minute options."
+    ]
+   ]
+  },
+  "outdoor-garden": {
+   "title": "Outdoor and garden picks",
+   "guide": "Make your yard, patio and outdoor time better with gear that is built to handle the weather. We feature solar security cameras, lighting, garden tools and outdoor comfort items, with a focus on weather resistance, easy setup and no-surprise ongoing costs.",
+   "faq": [
+    [
+     "Do solar security cameras work in winter?",
+     "Most work year-round, but shorter days mean less charging. Place the panel where it gets the most direct sun."
+    ],
+    [
+     "Do outdoor security cameras need a monthly subscription?",
+     "Not always. Some models, including several eufy cameras, store video locally with no monthly fee."
+    ],
+    [
+     "What are easy outdoor upgrades?",
+     "Solar path lights, a weatherproof Bluetooth speaker, a security camera and comfortable patio seating are simple, popular upgrades."
+    ]
+   ]
+  },
+  "kids-family": {
+   "title": "Kids and family favorites",
+   "guide": "We pick toys and family gear that spark creativity, get kids moving and hold up to everyday use. LEGO sets, STEM toys, games and family travel helpers are some of our favorites, chosen for age-appropriateness, quality and replay value.",
+   "faq": [
+    [
+     "What are good gifts for kids aged 4 and up?",
+     "Creative building sets like LEGO Classic, art supplies, puzzles and simple board games are popular and encourage imagination."
+    ],
+    [
+     "Are LEGO Classic sets good for younger kids?",
+     "Yes. LEGO Classic sets are designed for ages 4 and up and let kids build anything they imagine."
+    ],
+    [
+     "What are good stocking stuffers for kids?",
+     "Small LEGO sets, card games, craft kits and books make fun, affordable stocking stuffers."
+    ]
+   ]
+  },
+  "pet-picks": {
+   "title": "Picks for pet parents",
+   "guide": "Life with pets is better with the right tools. We feature products that make pet care easier, such as pet-hair vacuums, comfy beds, toys and feeding gear, focusing on durability, easy cleaning and good value from trusted brands.",
+   "faq": [
+    [
+     "What is the best way to remove pet hair from furniture?",
+     "A cordless hand vacuum with a motorized pet tool, such as the BISSELL Pet Hair Eraser, works quickly on couches, car seats and stairs."
+    ],
+    [
+     "What are good gifts for dog owners?",
+     "Durable chew toys, a washable dog bed, a pet camera and a quality leash are practical, popular gifts."
+    ],
+    [
+     "Are open-box pet vacuums a good deal?",
+     "Open-box items from highly rated sellers are often unused returns and can save a lot, as long as the return policy is clear."
+    ]
+   ]
+  }
+ },
+ "about": {
+  "title": "About Smart Shelf Picks",
+  "paras": [
+   "Smart Shelf Picks is a small, independent U.S. shopping guide. We sort through deals and popular products across home, kitchen, tech, fitness, travel, gifts, kids and pets, and share the picks we think are worth your time and money.",
+   "How we choose: we look at seller reputation, ratings and reviews, warranty and return policies, and whether the discount is real. We especially like certified refurbished products from the original brand, because they offer near-new quality at a much lower price.",
+   "Prices and availability change often, especially during holiday sales. The price shown on the retailer's site when you click is always the current one.",
+   "Affiliate disclosure: Smart Shelf Picks is reader-supported. Some links on this site and on our social pages are affiliate links, which means we may earn a small commission if you buy through them, at no extra cost to you. This never changes the price you pay.",
+   "Find us on Pinterest, Instagram and Facebook: @smartshelfpicks. Questions or suggestions? Email smartshelfpicks@gmail.com."
+  ]
+ }
+}
