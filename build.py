@@ -438,6 +438,71 @@ def build(products, copy):
     return pages
 
 
+# ---------- forwarding pages (/go/<slug>/) ----------
+# One small page per product, used as the link in Facebook posts. Its preview (title + our image) is what
+# Facebook shows on the card; a visitor is sent straight on to the affiliate link. Built for every product in
+# Products and Past-Products (shown on the site or not), and never removed: the list from the live site is
+# merged back in on every build, so links in old posts keep working even after a row is deleted.
+GO_LINKS_URL = SITE_URL + "/go/links.json"
+SAFE_SLUG = re.compile(r"^[a-z0-9][a-z0-9-]{0,79}$")
+
+def load_old_go():
+    try:
+        req = urllib.request.Request(GO_LINKS_URL, headers={"User-Agent": "smartshelfpicks-site-builder"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = json.loads(r.read().decode("utf-8"))
+        return {g["slug"]: g for g in data if SAFE_SLUG.match(g.get("slug") or "") and g.get("link")}
+    except Exception as err:
+        print(f"No earlier forwarding list found ({err}); starting fresh.")
+        return {}
+
+def go_page(g):
+    url = f"{SITE_URL}/go/{g['slug']}/"
+    name = g.get("name") or "Smart Shelf Picks"
+    desc = (g.get("caption") or "").strip() or f"{name}, picked by Smart Shelf Picks."
+    link = g["link"]
+    store = store_of(link)
+    img = f'<meta property="og:image" content="{e(g["image"])}">\n' if g.get("image") else ""
+    js_link = json.dumps(link).replace("</", "<\\/")
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{e(name)}</title>
+<meta name="description" content="{e(desc[:300])}">
+<link rel="canonical" href="{e(url)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Smart Shelf Picks">
+<meta property="og:title" content="{e(name)}">
+<meta property="og:description" content="{e(desc[:300])}">
+<meta property="og:url" content="{e(url)}">
+{img}<meta name="twitter:card" content="summary_large_image">
+<script>location.replace({js_link});</script>
+<style>body{{font-family:system-ui,-apple-system,sans-serif;text-align:center;padding:48px 16px;color:#333}}a{{color:#A04A12}}</style>
+</head>
+<body>
+<p>Taking you to {e(store)}&hellip;</p>
+<p><a href="{e(link)}" rel="sponsored nofollow noopener">Tap here if nothing happens</a></p>
+</body>
+</html>
+"""
+
+def build_go(items):
+    allg = load_old_go()
+    for g in items:
+        slug = (g.get("slug") or slugify(g.get("name") or "")).strip()
+        if not SAFE_SLUG.match(slug) or not g.get("link"):
+            continue
+        allg[slug] = {"slug": slug, "name": g.get("name") or "", "image": g.get("image") or "",
+                      "link": g["link"], "caption": g.get("caption") or ""}
+    for g in allg.values():
+        write(f"/go/{g['slug']}/", go_page(g))
+    write("/go/links.json", json.dumps(sorted(allg.values(), key=lambda x: x["slug"]), ensure_ascii=False))
+    print(f"Built {len(allg)} forwarding pages in go/")
+    return len(allg)
+
 def main():
     feed = load_feed()
     products = prepare(feed.get("products", []))
@@ -451,6 +516,7 @@ def main():
     for name in ("style.css", "contact.js", "search.js", "logo.svg"):
         shutil.copy(os.path.join(ROOT, name), os.path.join(OUT, "assets", name))
     pages = build(products, copy)
+    build_go(feed.get("go", []))
     print(f"Built {len(pages)} pages from {len(products)} products into {OUT}/")
 
 
