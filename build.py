@@ -120,6 +120,7 @@ def head(title, desc, path, extra_ld=None, og_image=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="impact-site-verification" value="f5ba2004-9dde-479b-bfbf-44d7ba98395e">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{e(url)}">
