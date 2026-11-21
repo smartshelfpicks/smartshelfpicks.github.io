@@ -121,6 +121,7 @@ def head(title, desc, path, extra_ld=None, og_image=None):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="impact-site-verification" value="f5ba2004-9dde-479b-bfbf-44d7ba98395e">
+<meta name="p:domain_verify" content="8d7f37e54b75a72b7afba51a97d65bd0"/>
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{e(url)}">
@@ -181,6 +182,7 @@ def foot():
 <a href="https://www.pinterest.com/smartshelfpicks/" rel="me noopener" target="_blank">Pinterest</a>
 <a href="https://www.instagram.com/smartshelfpicks/" rel="me noopener" target="_blank">Instagram</a>
 <a href="https://www.facebook.com/smartshelfpicks" rel="me noopener" target="_blank">Facebook</a>
+<a href="https://www.tiktok.com/@smart.shelf.picks" rel="me noopener" target="_blank">TikTok</a>
 </div>
 </div>
 <div class="wrap foot-note">Affiliate disclosure: some links are affiliate links. We may earn a small commission if you buy through them, at no extra cost to you. Prices change often; the retailer's page always shows today's price. &copy; {year} Smart Shelf Picks</div>
@@ -241,7 +243,8 @@ def build(products, copy):
     org_ld = {"@context": "https://schema.org", "@type": "Organization", "name": "Smart Shelf Picks", "url": SITE_URL,
               "logo": SITE_URL + "/assets/logo.svg", "email": "smartshelfpicks@gmail.com",
               "sameAs": ["https://www.pinterest.com/smartshelfpicks/", "https://www.instagram.com/smartshelfpicks/",
-                         "https://www.facebook.com/smartshelfpicks"]}
+                         "https://www.facebook.com/smartshelfpicks",
+                         "https://www.tiktok.com/@smart.shelf.picks"]}
 
     # Home
     tiles = [("Deals & Steals", "Refurbished tech & holiday decor"), ("Gift Ideas", "For music lovers & more"),
