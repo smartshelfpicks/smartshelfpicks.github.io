@@ -26,6 +26,13 @@ jobs:
           python-version: "3.12"
       - name: Build pages from the product sheet
         run: python3 build.py
+      - name: Install video and font tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          pip install pillow
+      - name: Build social pictures, pins and reels
+        run: python3 media.py || echo "Media build had a problem; the website still publishes."
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
