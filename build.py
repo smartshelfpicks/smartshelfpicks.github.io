@@ -93,8 +93,9 @@ def prepare(products):
             "image": p["image"], "link": p["link"], "store": store_of(p["link"]),
             "caption": (p.get("caption") or "").strip(),
             "order": p.get("order") if isinstance(p.get("order"), (int, float)) else 1e9, "i": i,
+            "added": p.get("added") if isinstance(p.get("added"), (int, float)) else 0,
         })
-    out.sort(key=lambda x: (x["order"], x["i"]))
+    out.sort(key=lambda x: (x["order"], -x["added"], x["i"]))  # newest picks first
     return out
 
 
@@ -269,15 +270,16 @@ def build(products, copy):
 <h2 id="cats-h">Shop by category</h2>
 <div class="catgrid">{cats_html}</div>
 </section>
-<section id="latest" class="sec" aria-labelledby="latest-h">
-<div class="sec-head"><h2 id="latest-h">Latest picks</h2><span class="muted">Updated automatically from our product list</span></div>
-{grid(latest[:12])}
-</section>
 {f'''<section id="deals" class="deals" aria-labelledby="deals-h">
 <h2 id="deals-h">Deals worth a look</h2>
 <p>Certified refurbished and seasonal deals. Prices move fast, so check before you buy.</p>
 {grid(deals[:8])}
 </section>''' if deals else ''}
+<section id="latest" class="sec" aria-labelledby="latest-h">
+<div class="sec-head"><h2 id="latest-h">Latest picks</h2><span class="muted">Updated automatically from our product list</span></div>
+{grid(latest[:12])}
+</section>
+
 </main>
 """
     write("/", home + foot())
