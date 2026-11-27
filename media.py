@@ -9,7 +9,7 @@ For every product in the sheet's "media" list it writes, under _site/m/<slug>/:
   reel.mp4   1080x1920, ~9 s slideshow                (Instagram/Facebook Reels, TikTok)
 Run after build.py:  python3 media.py
 """
-import glob, io, json, os, re, subprocess, sys, tempfile, urllib.request
+import datetime, glob, io, json, os, re, subprocess, sys, tempfile, urllib.request
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 SCRIPT_URL = ("https://script.google.com/macros/s/"
@@ -202,9 +202,9 @@ def make_reel(photo, p, path):
         args = ["ffmpeg", "-y", "-loglevel", "error"]
         for f in files:
             args += ["-i", f]
-        tracks = sorted(glob.glob(os.path.join(MUSIC, "*.m4a")) + glob.glob(os.path.join(MUSIC, "*.mp3")))
-        if tracks:  # royalty-free background music, picked per product
-            args += ["-i", tracks[sum(map(ord, p.get("slug", ""))) % len(tracks)]]
+        tracks = sorted(glob.glob(os.path.join(MUSIC, "calm*.m4a")) + glob.glob(os.path.join(MUSIC, "calm*.mp3")))
+        if tracks:  # soft royalty-free music: one track for the whole week, a new one each week
+            args += ["-i", tracks[datetime.date.today().isocalendar()[1] % len(tracks)]]
         else:
             args += ["-f", "lavfi", "-t", "9", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100"]
         zoom = ";".join(f"[{i}:v]scale=1188:2112,zoompan=z='min(zoom+0.0007,1.06)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
